@@ -1,0 +1,1 @@
+![Vzlom](vzlom.png)
