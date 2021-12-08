@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#social {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em 1em -1em;
+  gap: 3px;
+}
+
+#social > .button {
+  min-width: unset;
+  min-height: unset;
+  padding: 0.2em 0.5em;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+#social img {
+  height: 18px;
+  margin-right: 3px;
+}
+
+main {
+  margin: 0 30px 60px 220px;
+  box-sizing: border-box;
+}
+
+aside {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 8px;
+  z-index: 99;
+  display: flex;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+aside .tree-view {
+  width: 100%;
+  /* TODO: Move scrollbar into the recessed region? */
+  overflow-y: scroll;
+}
+
+h1 {
+  margin: 12px 0;
+}
+
+hr {
+  margin: 0;
+  border: 1px solid #ccc;
+  max-width: 400px;
+  box-shadow: 0 1px #fff;
+}
+
+h2 {
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h3,
+h4 {
+  /* Swap the margin for a top-padding so linking to this section
+     results in a better scroll position */
+  padding-top: 20px;
+  margin-top: 0;
+  display: block;
+  flex: 0 0 200px;
+}
+
+p {
+  max-width: 50rem;
+  line-height: 1.5;
+}
+
+p code {
+  background: #e0e0e0;
+  padding: 2px 3px;
+}
+
+.component {
+  display: flex;
+  margin-top: 24px;
+}
+
+blockquote {
+  margin: 0 0 20px;
+  padding: 20px;
+  background: #dfdfdf;
+}
+
+blockquote footer {
+  margin: 12px 0 0 12px;
+}
+
+.example {
+  margin: 16px 0;
+  padding: 12px 24px;
+  border-left: 1px solid #808080;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+details {
+  margin-top: 12px;
+}
+
+details > .copy {
+  display: block;
+  margin-left: auto;
+}
+
+summary {
+  user-select: none;
+  cursor: pointer;
+  display: inline;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary {
+  margin-bottom: 8px;
+}
+
+.background {
+  padding: 1.5em;
+  margin: 1.5em 0;
+  background: url("./flower-aaronburden-unsplash.jpg") no-repeat 0 center;
+}
+
+[role="dialog"] {
+  width: 450px;
+}
+
+@media (max-width: 480px) {
+  aside {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 16px;
+  }
+
+  hr,
+  p {
+    width: 100%;
+  }
+
+  h3,
+  h4 {
+    flex: 0;
+  }
+
+  .component {
+    display: block;
+    margin-top: 24px;
+  }
+
+  pre {
+    overflow-x: scroll;
+  }
+
+  [role="dialog"] {
+    width: 90%;
+  }
+}
