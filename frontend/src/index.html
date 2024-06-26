@@ -9,8 +9,8 @@
 
   <body>
     <div class="window">
-      <div class="title-bar" style="--wails-draggable:drag">
-        <img src="/assets/777.ico" class="icon"/>
+      <div class="title-bar" style="--wails-draggable: drag">
+        <img src="/assets/777.ico" class="icon" />
         <div class="title-bar-text">Взлом КАЗИНО</div>
         <div class="title-bar-controls">
           <!-- <button aria-label="Minimize" onclick="runtime.WindowMinimise()"></button> -->
@@ -19,8 +19,8 @@
       </div>
       <div class="window-body">
         <p class="text">
-          Казино взломано на 14%<br>
-          Выкачано <b>12 050</b> руб из <b>70 055 020</b> руб.<br><br>
+          Казино взломано на 14%<br />
+          Выкачано <b>12 050</b> руб из <b>70 055 020</b> руб.<br /><br />
           Продолжить?
         </p>
 
@@ -30,8 +30,13 @@
 
         <div class="buttons-container">
           <div class="buttons">
-            <button class="yes">Да</button>
-            <button class="no">Нет</button>
+            <button
+              class="yes"
+              onclick="runtime.BrowserOpenURL('https://youtu.be/dQw4w9WgXcQ')"
+            >
+              Да
+            </button>
+            <button class="no" onclick="go.main.App.No()">Нет</button>
           </div>
         </div>
       </div>

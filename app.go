@@ -21,3 +21,11 @@ func (b *App) startup(ctx context.Context) {
 func (b *App) domReady(ctx context.Context) {
 	runtime.WindowShow(ctx)
 }
+
+func (b *App) No() {
+	runtime.MessageDialog(b.ctx, runtime.MessageDialogOptions{
+		Type:    runtime.ErrorDialog,
+		Title:   "ты чё",
+		Message: "пидора ответ",
+	})
+}
