@@ -14,8 +14,18 @@ html {
   cursor: default;
 }
 
+.window {
+  height: 100%;
+  box-shadow: none;
+  border: none;
+  position: initial;
+  display: flex;
+  flex-direction: column;
+}
+
 .window-body {
   height: 100%;
+  flex: 1;
 }
 
 .icon {
@@ -27,12 +37,6 @@ html {
 .window,
 .window::before {
   border-radius: 0;
-}
-
-.window {
-  box-shadow: none;
-  border: none;
-  position: initial;
 }
 
 .text {
