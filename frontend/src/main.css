@@ -14,13 +14,8 @@ html {
   cursor: default;
 }
 
-.window {
-  width: 400px;
-  height: 200px;
-}
-
 .window-body {
-  height: 145px;
+  height: 100%;
 }
 
 .icon {
@@ -32,6 +27,12 @@ html {
 .window,
 .window::before {
   border-radius: 0;
+}
+
+.window {
+  box-shadow: none;
+  border: none;
+  position: initial;
 }
 
 .text {

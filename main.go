@@ -21,8 +21,8 @@ func main() {
 
 	err := wails.Run(&options.App{
 		Title:         "Взлом КАЗИНО",
-		Width:         402,
-		Height:        202,
+		Width:         400,
+		Height:        210,
 		DisableResize: true,
 		Frameless:     true,
 		Assets:        assets,
@@ -41,7 +41,6 @@ func main() {
 			},
 		},
 	})
-
 	if err != nil {
 		panic(err)
 	}
